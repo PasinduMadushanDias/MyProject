@@ -26,3 +26,7 @@ $router->get('/pdc-users', 'pdc-users/index.php')->only('admin');
 $router->get('/account', 'account.php')->only('auth');
 $router->post('/cv/store', 'cv/store.php')->only('student');
 $router->get('/cv/show', 'cv/show.php')->only('student');
+
+$router->get('/add-lecture', 'add-lecture.php');
+
+$router->get('/temptemp', 'temptemp.php');

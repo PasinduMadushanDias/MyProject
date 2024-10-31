@@ -29,4 +29,8 @@ $router->get('/cv/show', 'cv/show.php')->only('student');
 
 $router->get('/add-lecture', 'add-lecture.php');
 
+$router->get('/add-pdc', 'add-pdc.php');
+
 $router->get('/temptemp', 'temptemp.php');
+
+$router->get('/addition-form', 'addition-form.php');

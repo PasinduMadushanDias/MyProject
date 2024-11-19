@@ -29,7 +29,7 @@
         </aside> -->
         <main class="main-content">
             <header>
-                <h1>Manage Lecture</h1>
+                <h1>Manage manage Lecture</h1>
                 <p>View and Manage manage Lecturer</p>
             </header>
             <div class="actions">

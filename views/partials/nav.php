@@ -72,16 +72,28 @@ $navItems = [
         'only' => [Role::Admin]
     ],
     [
-        'text' => "Add PDC",
-        'href' => '/add-pdc',
-        'icon' => 'fa-square-poll-horizontal',
-        'only' => [Role::Admin]
-    ],
-    [
         'text' => "Addition Form",
         'href' => '/addition-form',
         'icon' => 'fa-sheet-plastic',
         'only' => [Role::Admin]
+    ],
+    [
+        'text' => 'Calendar',
+        'href' => '/calendar',
+        'icon' => 'fa-fire-flame-curved',
+        'only' => [Role::Lecturer],
+    ],
+    [
+        'text' => 'Report',
+        'href' => '/report',
+        'icon' => 'fa-sheet-plastic',
+        'only' => [Role::Lecturer],
+    ],
+    [
+        'text' => "Complaints",
+        'href' => '/complaints',
+        'icon' => 'fa-users',
+        'only' => [Role::Admin],
     ],
     
 ];

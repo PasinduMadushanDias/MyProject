@@ -1,0 +1,138 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+.header {
+    margin-bottom: 20px;
+}
+
+.header h1 {
+    font-size: 24px;
+    color: #333;
+}
+
+.header p {
+    color: #666;
+    font-size: 14px;
+}
+
+.calendar-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    gap: 20px;
+}
+
+.month-name {
+    font-size: 20px;
+    font-weight: bold;
+    min-width: 100px;
+    text-align: center;
+}
+
+.nav-button {
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: #666;
+    padding: 5px 10px;
+    transition: color 0.3s ease;
+}
+
+.nav-button:hover {
+    color: #333;
+}
+
+.calendar {
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.weekdays {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    background-color: #f8f9fa;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.weekdays div {
+    padding: 10px;
+    text-align: center;
+    font-weight: bold;
+    color: #495057;
+}
+
+.days {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+}
+
+.day {
+    border: 1px solid #e0e0e0;
+    min-height: 100px;
+    padding: 10px;
+    position: relative;
+    background-color: white;
+    transition: background-color 0.3s ease;
+}
+
+.day:hover {
+    background-color: #f8f9fa;
+}
+
+.day-number {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.event {
+    background-color: #007bff;
+    color: white;
+    padding: 2px 5px;
+    border-radius: 3px;
+    font-size: 12px;
+    margin-bottom: 2px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.event:hover {
+    background-color: #0056b3;
+}
+
+.current-day {
+    background-color: #f8f9fa;
+}
+
+.other-month {
+    color: #adb5bd;
+    background-color: #fafafa;
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 10px;
+    }
+    
+    .day {
+        min-height: 80px;
+        font-size: 14px;
+    }
+    
+    .event {
+        font-size: 11px;
+    }
+}

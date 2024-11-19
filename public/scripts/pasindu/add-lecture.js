@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 <td>${lecturer.name}</td>
                 <td>${lecturer.contactNo}</td>
                 <td>${lecturer.email}</td>
-                <td><button class="view-btn">View</button></td>
+                <td><button class="view-btn"><a href="/add-lecture/profile">View</a></button></td>
             `;
             tableBody.appendChild(row);
         });
@@ -24,7 +24,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Add event listeners for buttons and pagination
     document.querySelector('.delete-btn').addEventListener('click', () => alert('Delete functionality not implemented'));
-    document.querySelector('.new-btn').addEventListener('click', () => alert('New lecturer functionality not implemented'))
+    // document.querySelector('.new-btn').addEventListener('click', () => alert('New lecturer functionality not implemented'))
     document.querySelector('.search-input').addEventListener('input', (e) => console.log('Search:', e.target.value));
     document.querySelector('.prev-btn').addEventListener('click', () => alert('Previous page'));
     document.querySelector('.next-btn').addEventListener('click', () => alert('Next page'));

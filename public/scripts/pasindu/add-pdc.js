@@ -1,13 +1,7 @@
 document.addEventListener('DOMContentLoaded', function() {
     const lecturerData = [
-        { title: 'Dr', name: 'Kasun', contactNo: '0752207771', email: 'kasun@gmail.com' },
-        { title: 'Dr', name: 'Manju', contactNo: '0752207772', email: 'manju@gmail.com' },
-        { title: 'Dr', name: 'Chamath', contactNo: '0752207773', email: 'chamath@gmail.com' },
-        { title: 'Dr', name: 'Ajantha', contactNo: '0752207774', email: 'ajantha@gmail.com' },
-        { title: 'Dr', name: 'Dinunil', contactNo: '0752207775', email: 'dinunil@gmail.com' },
-        { title: 'Dr', name: 'Keneth', contactNo: '0752207776', email: 'keneth@gmail.com' },
-        { title: 'Dr', name: 'Lasanthi', contactNo: '0752207777', email: 'lasanthi@gmail.com' },
-        { title: 'Dr', name: 'Viraj', contactNo: '0752207778', email: 'viraj@gmail.com' },
+        { title: 'Dr', name: 'Kasun', contactNo: '0752207771', email: 'kasun@gmail.com' }
+
     ];
 
     const tableBody = document.getElementById('lecturerTableBody');
@@ -21,7 +15,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 <td>${lecturer.name}</td>
                 <td>${lecturer.contactNo}</td>
                 <td>${lecturer.email}</td>
-                <td><button class="view-btn">View</button></td>
+                <td><button class="view-btn"><a href="/add-pdc/profilepdc">View</a></button></td>
             `;
             tableBody.appendChild(row);
         });

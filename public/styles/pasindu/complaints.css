@@ -1,0 +1,162 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    background-color: #f5f5f5;
+}
+
+.sidebar {
+    width: 60px;
+    background-color: #fff;
+    height: 100vh;
+    padding: 20px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar-item {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 15px;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+.sidebar-item.active {
+    background-color: #e6f7ff;
+    color: #0099ff;
+}
+
+.settings {
+    margin-top: auto;
+}
+
+.main-content {
+    flex: 1;
+    padding: 30px;
+}
+
+.header {
+    margin-bottom: 30px;
+}
+
+h1 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.subtitle {
+    color: #666;
+    font-size: 14px;
+}
+
+.complaints-list {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    width: 350%;
+}
+
+.complaint-item {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    border-bottom: 1px solid #eee;
+}
+
+.complaint-item:last-child {
+    border-bottom: none;
+}
+
+.complaint-item.new {
+    background-color: #f8f9ff;
+}
+
+.title {
+    flex: 1;
+    color: #333;
+}
+
+.actions {
+    display: flex;
+    gap: 10px;
+    margin-right: 20px;
+}
+
+button {
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.btn-view {
+    background-color: #0099ff;
+    color: white;
+}
+
+.btn-mark {
+    background-color: #e6f7ff;
+    color: #0099ff;
+}
+
+.timestamp {
+    color: #666;
+    font-size: 14px;
+    width: 80px;
+    text-align: right;
+}
+
+.pagination {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 350%;
+}
+
+.page-numbers {
+    display: flex;
+    gap: 5px;
+}
+
+.page-numbers span {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.page-numbers span.active {
+    background-color: #0099ff;
+    color: white;
+}
+
+.btn-prev, .btn-next {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 5px 15px;
+}
+
+.btn-next {
+    background-color: #4a5568;
+    color: white;
+    border: none;
+}

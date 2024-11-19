@@ -1,4 +1,4 @@
-<p>Pasindu Madushan Dias Wijegunasinghe</p>
+<?php require base_path(path: 'views/partials/auth/auth.php') ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,7 +10,7 @@
 </head>
 <body>
     <div class="container">
-        <aside class="sidebar">
+        <!-- <aside class="sidebar">
             <div class="sidebar-item">
                 <span class="material-icons">dashboard</span>
             </div>
@@ -26,7 +26,7 @@
             <div class="sidebar-item">
                 <span class="material-icons">settings</span>
             </div>
-        </aside>
+        </aside> -->
         <main class="main-content">
             <header>
                 <h1>Manage Lecture</h1>
@@ -34,7 +34,7 @@
             </header>
             <div class="actions">
                 <button class="delete-btn">- Delete</button>
-                <button class="new-btn">+ New</button>
+                <button class="new-btn"><a href="/add-lecture/addition">+ New</a></button>
                 <input type="text" placeholder="Search" class="search-input">
             </div>
             <table class="lecturer-table">
@@ -69,3 +69,5 @@
     <script src="/scripts/pasindu/add-lecture.js"></script>
 </body>
 </html>
+<?php require base_path('views/partials/auth/auth-close.php') ?>
+

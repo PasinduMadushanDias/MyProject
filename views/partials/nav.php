@@ -95,6 +95,12 @@ $navItems = [
         'icon' => 'fa-users',
         'only' => [Role::Admin],
     ],
+    [
+        'text' => "CRUD",
+        'href' => '/crud',
+        'icon' => 'fa-user',
+        'only' => [Role::Admin],
+    ],
     
 ];
 

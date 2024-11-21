@@ -47,3 +47,6 @@ $router->get('/report', 'report.php');
 $router->get('/complaints', controller: 'complaints.php');
 $router->get('/complaints-form', controller: 'complaints-form.php');
 
+$router->get('/crud', controller: 'crud.php');
+
+

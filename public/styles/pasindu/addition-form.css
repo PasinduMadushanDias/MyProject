@@ -14,10 +14,11 @@ body {
 }
 
 .container {
-    width: 150%;
+    width: 250%;
     max-width: 2000px;
     margin: 20px;
     padding: 20px;
+   
 }
 
 .add-lecturer-card {
@@ -68,7 +69,7 @@ h2 {
 }
 
 .camera-icon {
-    position: absolute;
+    position:absolute;
     bottom: 0;
     right: 0;
     background: rgba(0, 0, 0, 0.7);
